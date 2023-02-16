@@ -1,0 +1,99 @@
+*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+
+}
+
+.container{
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid white;
+   
+}
+
+.container h2{
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.4rem;
+}
+
+
+.formulario-datos{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.formulario-datos input{
+    margin: 8px 0px;
+    line-height: 30px;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.formulario-datos input:focus{
+
+border-bottom:  solid 1px dodgerblue;
+    border-radius: 4px;
+
+}
+
+.formulario-datos button{
+    margin-top: 55px;
+    margin: 6px 0px;
+    background-color: dodgerblue;
+    border: 0;
+    outline: 0;
+    height: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+.pass{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.listado-tareas{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tarea{
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: space-between;
+    height: 12px;
+}
+
+
+.iconos{
+    color: tomato;
+    cursor: pointer;
+}
