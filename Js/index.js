@@ -4,7 +4,14 @@ const direccion = document.querySelector(".Direccion")
 const btnAgregarTarea = document.querySelector(".btn-agregar-tarea")
 const ListadoTareas = document.querySelector(".listado-tareas")
 
-const local = window.localStorage
+const local = window.localStorage;
+
+fetch("http://www.raydelto.org/agenda.php")
+    .then(Response => Response.json())
+    .then(data => mostrarData(data))
+    .catch(err = console.log("Error"))
+
+
 
 btnAgregarTarea.onclick = () => {
     let contacto = {
@@ -17,3 +24,4 @@ btnAgregarTarea.onclick = () => {
 }
 
 cargarContacto(local, ListadoTareas)
+
